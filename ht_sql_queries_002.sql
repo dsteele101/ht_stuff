@@ -12,3 +12,8 @@ ON bookings.hotelid=hotels.hotelid
 WHERE bookings.iso_checkin between '2015-02-03' and '2015-12-24'
 GROUP BY bookings.hotelid
 ORDER BY total_num_bookings DESC;
+
+SELECT MONTHNAME(bookings.iso_checkin) as month, DAYOFWEEK(bookings.iso_checkin) as dow, COUNT(bookings.iso_checkin) as num_checkin
+FROM bookings
+GROUP BY month
+ORDER BY month(bookings.iso_checkin) ASC;
