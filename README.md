@@ -6,7 +6,11 @@ ht_inv_response.txt - The response body from a HotelTonight V6 Inventory Request
   
 ht_sql_queries_001.sql - The SQL statements needed to create a DB and populate it with HotelTonight data. Then query that data for the answers to the first two questions.
 
-ht_sql_responses_001.txt - The responses from the above statements.
+ht_sql_responses_001.txt - The responses from ht_sql_queries_001.sql.
+
+ht_sql_queries_002.txt - The SQL statements needed to create a DB and populate it with HotelTonight data. Then query that data for the answers to the last two questions.
+
+ht_sql_responses_002.txt - The responses from ht_sql_queries_002.sql.
 
 Note for when dealing with CSV files. Sometimes they may have extra characters appended to the end. Use sed to get rid of those characters.
 
