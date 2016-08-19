@@ -12,6 +12,8 @@ ht_sql_queries_002.sql - The SQL statements needed to create a DB and populate i
 
 ht_sql_responses_002.txt - The responses from ht_sql_queries_002.sql.
 
+In the responses to question 4, an integer value is returned associated with a day of the week. 1 is Sunday, 7 Saturday, the rest of the days of the week fall between those numbers as expected.
+
 Note for when dealing with CSV files. Sometimes they may have extra characters appended to the end. Use sed to get rid of those characters.
 
 Get rid of ^M nonsense at the end of CSV files: 'sed -i -e "s/\r//g" file'
