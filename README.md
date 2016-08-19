@@ -8,7 +8,7 @@ ht_sql_queries_001.sql - The SQL statements needed to create a DB and populate i
 
 ht_sql_responses_001.txt - The responses from ht_sql_queries_001.sql.
 
-ht_sql_queries_002.txt - The SQL statements needed to create a DB and populate it with HotelTonight data. Then query that data for the answers to the last two questions.
+ht_sql_queries_002.sql - The SQL statements needed to create a DB and populate it with HotelTonight data. Then query that data for the answers to the last two questions.
 
 ht_sql_responses_002.txt - The responses from ht_sql_queries_002.sql.
 
