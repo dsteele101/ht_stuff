@@ -15,3 +15,21 @@
 |                 17 | Dana Hotel    |
 +--------------------+---------------+
 12 rows in set (0.00 sec)
+
++-----------+------+-------------+
+| month     | dow  | num_checkin |
++-----------+------+-------------+
+| January   |    7 |           4 |
+| February  |    2 |          56 |
+| March     |    7 |          62 |
+| April     |    6 |          60 |
+| May       |    2 |          62 |
+| June      |    5 |          60 |
+| July      |    6 |          43 |
+| August    |    1 |          31 |
+| September |    1 |          30 |
+| October   |    2 |          31 |
+| November  |    5 |          30 |
+| December  |    3 |          31 |
++-----------+------+-------------+
+12 rows in set (0.00 sec)
