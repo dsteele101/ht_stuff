@@ -1,0 +1,17 @@
++--------------------+---------------+
+| total_num_bookings | hotelname     |
++--------------------+---------------+
+|                 86 | Clift         |
+|                 71 | Nautilus      |
+|                 69 | Metropolitan  |
+|                 52 | The LINE      |
+|                 52 | Omni          |
+|                 34 | Nobu          |
+|                 34 | Shore Club    |
+|                 18 | The Edgewater |
+|                 18 | The Langham   |
+|                 17 | Nikko         |
+|                 17 | Ventana       |
+|                 17 | Dana Hotel    |
++--------------------+---------------+
+12 rows in set (0.00 sec)
