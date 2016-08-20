@@ -23,7 +23,7 @@ SELECT iso_checkin, iso_checkout
 FROM bookings
 WHERE '2015-02-21' between iso_checkin and iso_checkout and iso_checkout not like '2015-02-21';
 
-SELECT iso_checkin, COUNT(iso_checkout)
+SELECT COUNT(iso_checkout)
 FROM bookings
 WHERE '2015-02-21' between iso_checkin and iso_checkout and iso_checkout not like '2015-02-21';
 
@@ -31,6 +31,6 @@ SELECT iso_checkin, iso_checkout
 FROM bookings
 WHERE iso_checkout > '2015-02-21' and iso_checkin < '2015-02-23';
 
-SELECT iso_checkin, COUNT(iso_checkout)
+SELECT COUNT(iso_checkout)
 FROM bookings
 WHERE iso_checkout > '2015-02-21' and iso_checkin < '2015-02-23';
