@@ -19,18 +19,14 @@ ALTER TABLE bookings ADD iso_checkout VARCHAR(10) AFTER iso_checkin;
 UPDATE bookings
 SET iso_checkout=IFNULL(iso_checkout,DATE_ADD(STR_TO_DATE(left(checkin,10),'%m/%d/%Y'), INTERVAL nightsstayed DAY));
 
-SELECT iso_checkin, iso_checkout
-FROM bookings
-WHERE '2015-02-21' between iso_checkin and iso_checkout and iso_checkout not like '2015-02-21';
+SELECT b.iso_checkin, b.iso_checkout, t.total
+FROM bookings as b
+JOIN (SELECT count(*) as total, iso_checkin
+	FROM bookings WHERE '2015-02-21' between iso_checkin and iso_checkout and iso_checkout not like '2015-02-21') as t
+ON b.iso_checkin = t.iso_checkin;
 
-SELECT COUNT(iso_checkout)
-FROM bookings
-WHERE '2015-02-21' between iso_checkin and iso_checkout and iso_checkout not like '2015-02-21';
-
-SELECT iso_checkin, iso_checkout
-FROM bookings
-WHERE iso_checkout > '2015-02-21' and iso_checkin < '2015-02-23';
-
-SELECT COUNT(iso_checkout)
-FROM bookings
-WHERE iso_checkout > '2015-02-21' and iso_checkin < '2015-02-23';
+SELECT b.iso_checkin, b.iso_checkout, t.total
+FROM bookings as b
+JOIN (SELECT count(*) as total, iso_checkin
+	FROM bookings WHERE iso_checkout > '2015-02-21' and iso_checkin < '2015-02-23') as t
+ON b.iso_checkin = t.iso_checkin;
